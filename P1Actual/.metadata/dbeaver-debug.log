@@ -1,0 +1,356 @@
+2022-07-23 00:46:06.432 - Create display
+> Start Eclipse IDE UI [org.eclipse.ui.ide 3.18.500.v20220215-1304]
+2022-07-23 00:46:06.488 - DBeaver 22.1.1.202206261508 is starting
+2022-07-23 00:46:06.489 - OS: Windows 10 10.0 (amd64)
+2022-07-23 00:46:06.489 - Java version: 11.0.12 by Eclipse Foundation (64bit)
+2022-07-23 00:46:06.489 - Install path: 'C:\Users\mitch\AppData\Local\DBeaver'
+2022-07-23 00:46:06.489 - Instance path: 'file:/M:/Revature/project1-DanielMitchell/P1Actual/'
+2022-07-23 00:46:06.489 - Memory available 64Mb/1024Mb
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.84.202206261508]
+2022-07-23 00:46:06.499 - Starting RMI server at 43565
+2022-07-23 00:46:06.537 - Run workbench
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.16.400.v20220222-1128]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.3.100.v20210910-0640]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.5.0.v20210115-1333]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.16.0.v20190528-0725]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.13.0.v20201026-1147]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.4.400.v20211102-0453]
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.15.400.v20220308-0630]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.13.100.v20210722-1426]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.17.100.v20210910-0640]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.14.400.v20211026-1534]
+> Start DBeaver UI [org.jkiss.dbeaver.ui 5.1.99.202206261508]
+2022-07-23 00:46:07.474 - Configure workbench window
+> Start Help System Core [org.eclipse.help 3.9.100.v20210721-0601]
+2022-07-23 00:46:07.519 - Create actions
+2022-07-23 00:46:07.522 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2022-07-23 00:46:07.523 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2022-07-23 00:46:07.523 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2022-07-23 00:46:07.768 - Initialize workbench window
+2022-07-23 00:46:07.771 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.84.202206261508]
+> Start Equinox Java Authentication and Authorization Service (JAAS) [org.eclipse.equinox.security 1.3.900.v20220108-1321]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.4.0.v20210426-0838]
+> Start Internet Connection Management [org.eclipse.core.net 1.3.1100.v20210424-0724]
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.74.202206261508]
+2022-07-23 00:46:08.268 - Loading user drivers configuration from 'M:\Revature\project1-DanielMitchell\P1Actual\.metadata\.plugins\org.jkiss.dbeaver.core\drivers.xml'
+2022-07-23 00:46:08.276 - Total database drivers: 100 (100)
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.121.202206261508]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.90.202206261508]
+> Start Draw2d [org.eclipse.draw2dl 3.12.100.20220506142945]
+> Start GEF3 GEF (MVC) [org.eclipse.gef3 3.12.100.20220506142945]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.44.202206261508]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.44.202206261508]
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.84.202206261508]
+> Start Default Text Editor [org.eclipse.ui.editors 3.14.300.v20210913-0815]
+> Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.16.400.v20220218-1619]
+> Start Team Support Core [org.eclipse.team.core 3.9.300.v20220204-0611]
+> Start Core Compare Support [org.eclipse.compare.core 3.6.1000.v20201020-1107]
+> Start Console [org.eclipse.ui.console 3.11.100.v20210721-1355]
+> Start Debug Core [org.eclipse.debug.core 3.19.0.v20220125-2302]
+2022-07-23 00:48:05.487 - Connect with 'postgres' (postgres-jdbc-182295f635d-13ef2218152feb16)
+> Start DBeaver PostgreSQL Support [org.jkiss.dbeaver.ext.postgresql 2.1.157.202206261508]
+> Start DBeaver GIS Support [org.jkiss.dbeaver.data.gis 1.0.108.202206261508]
+2022-07-23 00:48:05.582 - Connection failed (postgres-jdbc-182295f635d-13ef2218152feb16)
+org.jkiss.dbeaver.model.exec.DBCConnectException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:242)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.openConnection(PostgreDataSource.java:473)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.loadAvailableDatabases(PostgreDataSource.java:164)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.initializeRemoteInstance(PostgreDataSource.java:149)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:101)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:93)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.<init>(PostgreDataSource.java:97)
+	at org.jkiss.dbeaver.ext.postgresql.PostgreDataSourceProvider.openDataSource(PostgreDataSourceProvider.java:108)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:983)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:920)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:70)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.postgresql.Driver$ConnectThread.getResult(Driver.java:420)
+	at org.postgresql.Driver.connect(Driver.java:271)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$0(JDBCDataSource.java:191)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$1(JDBCDataSource.java:210)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:208)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Null value for 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotNull(Preconditions.java:41)
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:55)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:147)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.access$100(Driver.java:62)
+	at org.postgresql.Driver$ConnectThread.run(Driver.java:375)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-23 00:48:05.584 - org.jkiss.dbeaver.model.exec.DBCConnectException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+org.jkiss.dbeaver.model.exec.DBCConnectException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:242)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.openConnection(PostgreDataSource.java:473)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.loadAvailableDatabases(PostgreDataSource.java:164)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.initializeRemoteInstance(PostgreDataSource.java:149)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:101)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:93)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.<init>(PostgreDataSource.java:97)
+	at org.jkiss.dbeaver.ext.postgresql.PostgreDataSourceProvider.openDataSource(PostgreDataSourceProvider.java:108)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:983)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:920)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:70)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.postgresql.Driver$ConnectThread.getResult(Driver.java:420)
+	at org.postgresql.Driver.connect(Driver.java:271)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$0(JDBCDataSource.java:191)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$1(JDBCDataSource.java:210)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:208)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Null value for 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotNull(Preconditions.java:41)
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:55)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:147)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.access$100(Driver.java:62)
+	at org.postgresql.Driver$ConnectThread.run(Driver.java:375)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-23 00:48:05.598 - Null value for 'password'
+java.lang.IllegalArgumentException: Null value for 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotNull(Preconditions.java:41)
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:55)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:147)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.access$100(Driver.java:62)
+	at org.postgresql.Driver$ConnectThread.run(Driver.java:375)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-23 00:48:16.127 - Delete empty SQL script '\General\Scripts\Script.sql'
+2022-07-23 00:48:17.205 - Connect with 'postgres' (postgres-jdbc-182295f635d-13ef2218152feb16)
+2022-07-23 00:48:17.324 - Connection failed (postgres-jdbc-182295f635d-13ef2218152feb16)
+org.jkiss.dbeaver.model.exec.DBCConnectException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:242)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.openConnection(PostgreDataSource.java:473)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.loadAvailableDatabases(PostgreDataSource.java:164)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.initializeRemoteInstance(PostgreDataSource.java:149)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:101)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:93)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.<init>(PostgreDataSource.java:97)
+	at org.jkiss.dbeaver.ext.postgresql.PostgreDataSourceProvider.openDataSource(PostgreDataSourceProvider.java:108)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:983)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:920)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:70)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.postgresql.Driver$ConnectThread.getResult(Driver.java:420)
+	at org.postgresql.Driver.connect(Driver.java:271)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$0(JDBCDataSource.java:191)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$1(JDBCDataSource.java:210)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:208)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Null value for 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotNull(Preconditions.java:41)
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:55)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:147)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.access$100(Driver.java:62)
+	at org.postgresql.Driver$ConnectThread.run(Driver.java:375)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-23 00:48:17.325 - org.jkiss.dbeaver.model.exec.DBCConnectException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+org.jkiss.dbeaver.model.exec.DBCConnectException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:242)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.openConnection(PostgreDataSource.java:473)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.loadAvailableDatabases(PostgreDataSource.java:164)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.initializeRemoteInstance(PostgreDataSource.java:149)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:101)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:93)
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource.<init>(PostgreDataSource.java:97)
+	at org.jkiss.dbeaver.ext.postgresql.PostgreDataSourceProvider.openDataSource(PostgreDataSourceProvider.java:108)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:983)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:920)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:70)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.postgresql.Driver$ConnectThread.getResult(Driver.java:420)
+	at org.postgresql.Driver.connect(Driver.java:271)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$0(JDBCDataSource.java:191)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$1(JDBCDataSource.java:210)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:208)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Null value for 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotNull(Preconditions.java:41)
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:55)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:147)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.access$100(Driver.java:62)
+	at org.postgresql.Driver$ConnectThread.run(Driver.java:375)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-23 00:48:17.327 - Null value for 'password'
+java.lang.IllegalArgumentException: Null value for 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotNull(Preconditions.java:41)
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:55)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:147)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.access$100(Driver.java:62)
+	at org.postgresql.Driver$ConnectThread.run(Driver.java:375)
+	at java.base/java.lang.Thread.run(Unknown Source)
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.75.202206261508]
+> Start DBeaver PostgreSQL Support UI [org.jkiss.dbeaver.ext.postgresql.ui 1.0.60.202206261508]
+> Start Java Native Access [com.sun.jna 5.8.0.v20210503-0343]
+> Start DBeaver SSH tunnels UI [org.jkiss.dbeaver.net.ssh.ui 1.0.105.202206261508]
+> Start DBeaver SSH tunnels [org.jkiss.dbeaver.net.ssh 1.0.105.202206261508]
+2022-07-23 00:48:26.035 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
+2022-07-23 00:48:50.741 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
+2022-07-23 00:48:58.152 - Connect with 'postgres' (postgres-jdbc-182295f635d-13ef2218152feb16)
+2022-07-23 00:48:58.228 - Execution context opened (postgres; Main <postgres>; 0)
+2022-07-23 00:48:58.228 - Initiate connection to PostgreSQL database [postgres@localhost] for Main <postgres>
+2022-07-23 00:48:58.264 - Execution context opened (postgres; Metadata <postgres>; 1)
+2022-07-23 00:48:58.265 - Initiate connection to PostgreSQL database [postgres@localhost] for Metadata <postgres>
+2022-07-23 00:48:58.334 - Connected (postgres-jdbc-182295f635d-13ef2218152feb16, PostgreSQL JDBC Driver [42.2.25])
+2022-07-23 00:49:03.751 - Execution context opened (postgres; SQLEditor <Script.sql>; 2)
+2022-07-23 00:49:03.752 - Initiate connection to PostgreSQL database [postgres@localhost] for SQLEditor <Script.sql>
+2022-07-23 00:49:11.249 - SQL Error [3F000]: ERROR: no schema has been selected to create in
+  Position: 14
+
+Error position: line: 16 pos: 13
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [3F000]: ERROR: no schema has been selected to create in
+  Position: 14
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:577)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:486)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:172)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:493)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:894)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3546)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:172)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4885)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: ERROR: no schema has been selected to create in
+  Position: 14
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:329)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.lambda$0(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	... 12 more
+2022-07-23 00:52:59.197 - Can't get column 'arg_defaults': The column name arg_defaults was not found in this ResultSet.
+2022-07-23 00:52:59.197 - Can't get column 'protransform': The column name protransform was not found in this ResultSet.
+2022-07-23 00:52:59.197 - Can't get column 'proisagg': The column name proisagg was not found in this ResultSet.
+2022-07-23 00:52:59.197 - Can't get column 'proiswindow': The column name proiswindow was not found in this ResultSet.
+2022-07-23 00:52:59.198 - Can't get column 'description': The column name description was not found in this ResultSet.
+> Start Equinox Provisioning Metadata [org.eclipse.equinox.p2.metadata 2.6.100.v20210813-0606]
+2022-07-23 01:39:29.473 - SQL Error [42601]: ERROR: syntax error at or near ")"
+  Position: 119
+
+Error position: line: 21 pos: 118
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [42601]: ERROR: syntax error at or near ")"
+  Position: 119
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:577)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:486)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:172)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:493)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:894)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3546)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:172)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4885)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near ")"
+  Position: 119
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:329)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.lambda$0(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	... 12 more
+2022-07-23 01:39:57.696 - SQL Error [42703]: ERROR: column "ers_user_id" referenced in foreign key constraint does not exist
+
+Error position:
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [42703]: ERROR: column "ers_user_id" referenced in foreign key constraint does not exist
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:577)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:486)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:172)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:493)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:894)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3546)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:172)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4885)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "ers_user_id" referenced in foreign key constraint does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:329)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.lambda$0(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.utils.SecurityManagerUtils.wrapDriverActions(SecurityManagerUtils.java:94)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	... 12 more
