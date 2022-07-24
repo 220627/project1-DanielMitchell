@@ -3,8 +3,8 @@ package com.revature;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import com.revature.daos.ReimbursementDAO;
-import com.revature.daos.UserDAO;
+import com.revature.controllers.AuthController;
+import com.revature.controllers.ReimbursementController;
 import com.revature.utils.ConnectionUtil;
 
 import io.javalin.Javalin;
@@ -12,9 +12,6 @@ import io.javalin.Javalin;
 public class Launcher {
 
 	public static void main(String[] args) {
-		
-		UserDAO uDAO = new UserDAO();
-		ReimbursementDAO rDAO = new ReimbursementDAO();
 		
 		System.out.println("========Welcome to the Employee Reimbursement Management System (ERS)===========");
 		
@@ -28,5 +25,12 @@ public class Launcher {
 		Javalin app = Javalin.create(config -> {
 					config.enableCorsForAllOrigins();
 				}).start(3000); 
-	}
-}//End of Main Method
+		
+	ReimbursementController rc = new ReimbursementController();
+	app.get("/ers_reimbursement", rc.getReimbursementsHandler);
+	
+	AuthController ac = new AuthController();
+	app.post("/login", ac.loginHandler);
+	
+	}//End of Main Method
+}
