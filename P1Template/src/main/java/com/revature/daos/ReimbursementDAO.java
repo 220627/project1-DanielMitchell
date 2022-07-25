@@ -24,7 +24,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 		
 		try(Connection conn = ConnectionUtil.getConnection()){
 			
-			String sql = "SELECT * FROM ERS_REIMBURSEMENT;";
+			String sql = "SELECT * FROM \"ERS\".ers_reimbursement;";
 
 			Statement s = conn.createStatement(); 
 			ResultSet rs = s.executeQuery(sql);
@@ -36,7 +36,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 				Reimbursement r = new Reimbursement(
 							rs.getInt("reimb_id"),
 							rs.getInt("reimb_amount"),
-							rs.getInt("reimb_submitted"),
+							rs.getString("reimb_submitted"),
 							rs.getString("reimb_description"),
 							rs.getInt("reimb_author"),
 							rs.getInt("reimb_resolver"),
@@ -45,7 +45,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 						);
 						
 				int reimbStatusFK = rs.getInt("reimb_status_id_fk");
-				int reimbTypeFK = rs.getInt("reimb_type_id");
+				int reimbTypeFK = rs.getInt("reimb_type_id_fk");
 				
 				ReimbursementDAO rDAO = new ReimbursementDAO();
 				
@@ -56,9 +56,9 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 				r.setReimbuirsement_status(RS);
 				r.setReimbursement_type(RT);
 				reimbursementList.add(r);
-				System.out.println(reimbursementList);
+				
 			}
-			
+			log.info("User Got All Reimbursements");
 			return reimbursementList;
 			
 		} catch (SQLException e) {
@@ -75,7 +75,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 		
 		try(Connection conn = ConnectionUtil.getConnection()){
 		
-			String sql = "select * from ers_reimbursement_status where reimb_status_id = ?;";
+			String sql = "select * from \"ERS\".ers_reimbursement_status where reimb_status_id = ?;";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
 			ps.setInt(1, id);
@@ -105,7 +105,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 		
 		try(Connection conn = ConnectionUtil.getConnection()){
 		
-			String sql = "select * from ers_reimbursement_type where reimb_type_id = ?;";
+			String sql = "select * from \"ERS\".ers_reimbursement_type where reimb_type_id = ?;";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
 			ps.setInt(1, id);

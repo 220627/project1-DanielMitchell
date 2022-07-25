@@ -1,0 +1,9 @@
+2022-07-25 00:03:24 WARN  AuthController:43 - User Failed to Login!
+2022-07-25 00:05:10 WARN  AuthController:43 - User Failed to Login!
+2022-07-25 00:08:25 INFO  AuthController:33 - User Logged In!
+2022-07-25 00:15:35 INFO  AuthController:33 - User Logged In!
+2022-07-25 00:17:29 INFO  AuthController:33 - User Logged In!
+2022-07-25 00:19:08 INFO  AuthController:33 - User Logged In!
+2022-07-25 00:19:21 INFO  AuthController:33 - User Logged In!
+2022-07-25 00:24:43 INFO  AuthController:33 - User Logged In!
+2022-07-25 00:25:23 INFO  ReimbursementDAO:61 - User Got All Reimbursements

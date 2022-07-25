@@ -14,7 +14,7 @@ public class AuthDAO {
 		
 		try(Connection conn = ConnectionUtil.getConnection()){
 			
-		String sql = "select * from ers_users where username = ? and password = ?;";
+		String sql = "select * from \"ERS\".ers_users where ers_username = ? and ers_password = ?;";
 			
 		PreparedStatement ps = conn.prepareStatement(sql);
 		

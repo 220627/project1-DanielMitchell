@@ -4,7 +4,7 @@ public class Reimbursement {
 	
 	private int reimb_id;
 	private int reimb_amount;
-	private int reimb_submitted; // <--------------- CHECK TIMESTAMP NOTES
+	private String reimb_submitted; // <--------------- CHECK TIMESTAMP NOTES
 	private String reimb_description;
 	private int reimb_author;
 	private int reimb_resolver;
@@ -15,7 +15,7 @@ public class Reimbursement {
 	public Reimbursement() {
 		super();
 	}
-	public Reimbursement(int reimb_id, int reimb_amount, int reimb_submitted, String reimb_description,
+	public Reimbursement(int reimb_id, int reimb_amount, String reimb_submitted, String reimb_description,
 			int reimb_author, int reimb_resolver, ReimbursementStatus reimbuirsement_status,
 			ReimbursementType reimbursement_type) {
 		super();
@@ -47,10 +47,10 @@ public class Reimbursement {
 	public void setReimb_amount(int reimb_amount) {
 		this.reimb_amount = reimb_amount;
 	}
-	public int getReimb_submitted() {
+	public String getReimb_submitted() {
 		return reimb_submitted;
 	}
-	public void setReimb_submitted(int reimb_submitted) {
+	public void setReimb_submitted(String reimb_submitted) {
 		this.reimb_submitted = reimb_submitted;
 	}
 	public String getReimb_description() {
