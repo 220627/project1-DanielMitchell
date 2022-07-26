@@ -53,7 +53,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 				ReimbursementType RT = rDAO.getReimbType(reimbTypeFK);
 				
 				
-				r.setReimbuirsement_status(RS);
+				r.setReimbursement_status(RS);
 				r.setReimbursement_type(RT);
 				reimbursementList.add(r);
 				

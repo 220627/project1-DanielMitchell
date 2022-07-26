@@ -37,8 +37,3 @@ async function loginFunction() {
       "Login failed! Try Again..";
   }
 }
-
-//recommended to have one login page and based on user_role_id, switch pages
-//so if user_role_id is equal to "employee", send them to the employee page
-//and then the same kind of logic for managers
-//have to google how to switch pages form a JS function
