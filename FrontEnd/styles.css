@@ -1,0 +1,18 @@
+body {
+  background-color: darkslategray;
+}
+.btn {
+  background-color: cadetblue;
+}
+#mainHead {
+  display: grid;
+  position: relative;
+  justify-items: center;
+  padding-top: 25px;
+  white-space: initial;
+}
+#row {
+  display: grid;
+  justify-items: center;
+  margin: 2%;
+}
