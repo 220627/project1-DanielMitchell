@@ -27,9 +27,9 @@ async function loginFunction() {
     //wipe our login row and welcome the user
     document.getElementById("welcomeHead").innerText = "Welcome ";
     if (user === "Employee") {
-      window.location.href = "/employee.html";
+      window.location.href = "/HTML/employee.html";
     } else if (user == "Manager") {
-      window.location.href = "/manager.html";
+      window.location.href = "/HTML/manager.html";
     }
   } else {
     //the header will change if the login fails

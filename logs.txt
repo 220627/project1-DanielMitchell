@@ -37,3 +37,18 @@
 2022-07-26 01:48:51 INFO  ReimbursementDAO:61 - User Got All Reimbursements
 2022-07-26 01:54:14 INFO  ReimbursementDAO:61 - User Got All Reimbursements
 2022-07-26 01:54:21 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 01:55:43 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 01:57:59 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 01:58:31 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:01:47 INFO  AuthController:33 - User Logged In!
+2022-07-26 02:02:14 INFO  AuthController:33 - User Logged In!
+2022-07-26 02:02:17 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:19:51 WARN  AuthController:43 - User Failed to Login!
+2022-07-26 02:19:53 INFO  AuthController:33 - User Logged In!
+2022-07-26 02:20:04 INFO  AuthController:33 - User Logged In!
+2022-07-26 02:23:53 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:24:05 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:26:16 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:26:25 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:27:25 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-26 02:27:27 INFO  ReimbursementDAO:61 - User Got All Reimbursements
