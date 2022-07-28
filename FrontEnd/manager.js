@@ -10,58 +10,45 @@ async function getReimbursements() {
   if (response.status === 200) {
     let data = await response.json();
     console.log(data);
-    document.getElementById("reimbBody").innerHTML = "";
+    // document.getElementById("reimbBody").innerHTML = "";
+
+    var data1 = [];
     for (let reimb of data) {
-      let row = document.createElement("tr");
-
-      let cell = document.createElement("td");
-      cell.innerHTML = reimb.reimb_id;
-      row.appendChild(cell);
-
-      let cell2 = document.createElement("td");
-      cell2.innerHTML = reimb.reimb_amount;
-      row.appendChild(cell2);
-
-      let cell3 = document.createElement("td");
-      cell3.innerHTML = reimb.reimb_submitted;
-      row.appendChild(cell3);
-
-      let cell4 = document.createElement("td");
-      cell4.innerHTML = reimb.reimb_description;
-      row.appendChild(cell4);
-
-      let cell5 = document.createElement("td");
-      cell5.innerHTML = reimb.reimb_author;
-      row.appendChild(cell5);
-
-      let cell6 = document.createElement("td");
-      cell6.innerHTML = reimb.reimb_resolver;
-      row.appendChild(cell6);
-
-      let status = reimb.reimbursement_status;
-      let reimbStatus = status.reimb_status;
-      let cell7 = document.createElement("td");
-      cell7.innerHTML = reimbStatus;
-      row.appendChild(cell7);
-
-      let type = reimb.reimbursement_type;
-      console.log(type);
-      let reimbType = type.reimb_type;
-      let cell8 = document.createElement("td");
-      cell8.innerHTML = reimbType;
-      row.appendChild(cell8);
-
-      document.getElementById("reimbBody").appendChild(row);
+      data1.push({
+        ID: reimb.reimb_id,
+        Amount: reimb.reimb_amount,
+        Submitted: reimb.reimb_submitted,
+        Description: reimb.reimb_description,
+        Author: reimb.reimb_author,
+        Resolver: reimb.reimb_resolver,
+        Status: reimb.reimbursement_status.reimb_status,
+        Type: reimb.reimbursement_type.reimb_type,
+      });
     }
+    console.log(data1);
+
+    generateTable(data1);
   } else {
     alert("Something went wrong! Check your server and database connections");
   }
-  /*let data = await response.json();
-  console.log(data);
-  $(document).ready(function () {
-    $("#reimbTable").DataTable();
-  });*/
 } //End of getReimbursements()
+
+function generateTable(data) {
+  $("#reimbTable").DataTable({
+    data: data,
+    columns: [
+      { data: "ID" },
+      { data: "Amount" },
+      { data: "Submitted" },
+      { data: "Description" },
+      { data: "Author" },
+      { data: "Resolver" },
+      { data: "Status" },
+      { data: "Type" },
+    ],
+  });
+}
+
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
   table = document.getElementById("reimbTable");
@@ -82,7 +69,7 @@ function sortTable() {
       x = rows[i].getElementsByTagName("TD")[6];
       y = rows[i + 1].getElementsByTagName("TD")[6];
       // Check if the two rows should switch place:
-      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+      if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
         // If so, mark as a switch and break the loop:
         shouldSwitch = true;
         break;

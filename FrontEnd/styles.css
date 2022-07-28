@@ -1,5 +1,14 @@
 body {
-  background-color: darkslategray;
+  background: linear-gradient(
+    56deg,
+    rgba(32, 3, 69, 1) 0%,
+    rgba(47, 79, 79, 1) 35%,
+    rgba(47, 79, 79, 1) 65%,
+    rgba(14, 30, 37, 1) 100%
+  );
+}
+html {
+  height: 100%;
 }
 .btn {
   background-color: cadetblue;
@@ -8,6 +17,10 @@ body {
 #mainHead {
   display: grid;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 15px;
+  padding: 20px 10px;
+  border-radius: 10px;
   justify-items: center;
   padding-top: 25px;
   white-space: initial;
@@ -16,6 +29,9 @@ body {
   display: grid;
   justify-items: center;
   margin: 2%;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px 10px;
+  border-radius: 10px;
 }
 .btn:hover,
 .btn:active {
@@ -24,4 +40,7 @@ body {
     2px 2px 0px 0px rgba(0, 0, 0, 0.85), 1px 1px 0px 0px rgba(0, 0, 0, 0.85),
     3px 3px 0px 0px rgba(0, 0, 0, 0.85);
   background-color: cadetblue;
+}
+#reimbTable {
+  padding: 10px;
 }
