@@ -26,10 +26,11 @@ public class AuthDAO {
 		if(rs.next()) {
 			
 			User u = new User(
-					rs.getInt("ers_user_id"),
-					rs.getString("ers_username"),
-					rs.getString("ers_password")
-					);
+				rs.getInt("ers_user_id"),
+				rs.getString("ers_username"),
+				rs.getString("ers_password"),
+				rs.getInt("user_roles_fk")
+				);
 			
 			return u;
 		}

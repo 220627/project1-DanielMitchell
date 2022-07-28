@@ -31,6 +31,16 @@ public class User {
 	}
 
 
+
+	public User(int ers_user_id, String ers_username, String ers_password, int user_roles_fk) {
+		super();
+		this.ers_user_id = ers_user_id;
+		this.ers_username = ers_username;
+		this.ers_password = ers_password;
+		this.user_roles_fk = user_roles_fk;
+	}
+
+
 	@Override
 	public String toString() {
 		return "User [ers_user_id=" + ers_user_id + ", ers_username=" + ers_username + ", ers_password=" + ers_password

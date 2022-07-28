@@ -63,6 +63,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 			
 		} catch (SQLException e) {
 			System.out.println("SOMETHING WENT WRONG GETTING REIMBURSEMENTS");
+			log.warn("User Failed Getting Reimbursements");
 			e.printStackTrace(); 
 		}
 		
@@ -133,15 +134,16 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 			
 			try(Connection conn = ConnectionUtil.getConnection()){
 				
-			String sql = "INSERT INTO \"ERS\".ers_reimbursement (reimb_amount, reimb_submitted, reimb_description, reimb_author, reimb_resolver, reimb_status_id_fk, reimb_type_id_fk) VALUES(?, now(), ?, DEFAULT, NULL, DEFAULT, ?);";
+			String sql = "INSERT INTO \"ERS\".ers_reimbursement (reimb_amount, reimb_submitted, reimb_description, reimb_author, reimb_resolver, reimb_status_id_fk, reimb_type_id_fk) VALUES(?, now(), ?, ?, NULL, DEFAULT, ?);";
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
 				
 			ps.setInt(1, newReimb.getReimb_amount());
 			ps.setString(2, newReimb.getReimb_description());
-			ps.setInt(3, newReimb.getReimb_type_id_fk());
+			ps.setInt(3, newReimb.getReimb_author());
+			ps.setInt(4, newReimb.getReimb_type_id_fk());
 			
-			System.out.println(ps);
+			System.out.println("REIMBURSEMENT SUBMITTED");
 			ps.executeUpdate();
 			
 			return true; //if the update is successful, true will get returned

@@ -26,9 +26,10 @@ async function loginFunction() {
 
     //wipe our login row and welcome the user
     document.getElementById("welcomeHead").innerText = "Welcome ";
-    if (user === "Employee") {
+    console.log(data);
+    if (data.user_roles_fk === 2) {
       window.location.href = "/HTML/employee.html";
-    } else if (user == "Manager") {
+    } else if (data.user_roles_fk === 1) {
       window.location.href = "/HTML/manager.html";
     }
   } else {
