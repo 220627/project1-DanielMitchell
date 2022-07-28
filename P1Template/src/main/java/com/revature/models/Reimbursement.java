@@ -15,6 +15,8 @@ public class Reimbursement {
 	public Reimbursement() {
 		super();
 	}
+	
+	private int reimb_type_id_fk;
 	public Reimbursement(int reimb_id, int reimb_amount, String reimb_submitted, String reimb_description,
 			int reimb_author, int reimb_resolver, ReimbursementStatus reimbuirsement_status,
 			ReimbursementType reimbursement_type) {
@@ -82,5 +84,11 @@ public class Reimbursement {
 	}
 	public void setReimbursement_type(ReimbursementType reimbursement_type) {
 		this.reimbursement_type = reimbursement_type;
+	}
+	public int getReimb_type_id_fk() {
+		return reimb_type_id_fk;
+	}
+	public void setReimb_type_id_fk(int reimb_type_id_fk) {
+		this.reimb_type_id_fk = reimb_type_id_fk;
 	}
 }//End of Reimbursement

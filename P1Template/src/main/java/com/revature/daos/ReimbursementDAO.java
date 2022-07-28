@@ -128,4 +128,28 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 		return null;
 		
 	}
+	@Override
+	public boolean submitReimb(Reimbursement newReimb) {
+			
+			try(Connection conn = ConnectionUtil.getConnection()){
+				
+			String sql = "INSERT INTO \"ERS\".ers_reimbursement (reimb_amount, reimb_submitted, reimb_description, reimb_author, reimb_resolver, reimb_status_id_fk, reimb_type_id_fk) VALUES(?, now(), ?, DEFAULT, NULL, DEFAULT, ?);";
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+				
+			ps.setInt(1, newReimb.getReimb_amount());
+			ps.setString(2, newReimb.getReimb_description());
+			ps.setInt(3, newReimb.getReimb_type_id_fk());
+			
+			System.out.println(ps);
+			ps.executeUpdate();
+			
+			return true; //if the update is successful, true will get returned
+				
+			} catch (SQLException e) { //if anything goes wrong, this SQLException will get thrown
+				System.out.println("REIUMBURSEMENT SUBMISSIONFAILED"); //tell the console we failed
+				e.printStackTrace(); //print out the error log, which we'll need for debugging
+			}
+		 return false;
+	}
 }

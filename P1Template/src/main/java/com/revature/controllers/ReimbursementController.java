@@ -14,7 +14,7 @@ public class ReimbursementController {
 	
 	public Handler getReimbursementsHandler = (ctx) -> {
 		
-		//if(AuthController.ses != null) { 
+		if(AuthController.ses != null) { 
 			
 			ArrayList<Reimbursement> reimbursements = rDAO.getReimbursements();
 			
@@ -24,10 +24,36 @@ public class ReimbursementController {
 			
 			ctx.result(JSONreimbursements); 
 			ctx.status(200);
-			/*} else { 
+			} else { 
 				ctx.result("PLEASE LOG IN");
 				ctx.status(401); 
-			}*/
+			}
 	};
+
+	public Handler submitReimbursementHandler = (ctx) -> {
+		if(AuthController.ses != null) { 
+			
+			
+			String body = ctx.body();
+			
+			Gson gson = new Gson();
+		
+			Reimbursement newReimb = gson.fromJson(body, Reimbursement.class);
+			
+			
+			if(rDAO.submitReimb(newReimb)) {
+				//return a successful status code
+				ctx.status(202); //202 stands for "accepted"
+			} else {
+				ctx.status(406); //406 stands for "Not Acceptable", AKA whatever the user sent couldn't be added to the DB
+			}
+			
+			
+		} else { 
+			ctx.result("PLEASE LOG IN");
+			ctx.status(401); 
+		}
+	};
+	
 
 }

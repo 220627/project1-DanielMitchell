@@ -13,4 +13,6 @@ public interface ReimbursementDAOInterface {
 
 	ReimbursementType getReimbType(int id);
 
+	boolean submitReimb(Reimbursement newReimb);
+
 }

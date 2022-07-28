@@ -25,7 +25,7 @@ html {
   padding-top: 25px;
   white-space: initial;
 }
-#row {
+#reimbTableDiv {
   display: grid;
   justify-items: center;
   margin: 2%;

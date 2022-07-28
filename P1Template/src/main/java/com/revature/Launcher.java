@@ -28,9 +28,12 @@ public class Launcher {
 		
 	ReimbursementController rc = new ReimbursementController();
 	app.get("/ers_reimbursement", rc.getReimbursementsHandler);
+	app.put("/ers_reimbursement" , rc.submitReimbursementHandler);
 	
 	AuthController ac = new AuthController();
 	app.post("/login", ac.loginHandler);
+	
+	
 	
 	}//End of Main Method
 }
