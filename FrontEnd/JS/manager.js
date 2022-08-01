@@ -25,6 +25,8 @@ async function getReimbursements() {
     }
     console.log(data1);
     generateTable(data1);
+    $("#getReimbursementButton").addClass("hide");
+    $("#decisionDiv").removeClass("hide");
   } else {
     alert("Something went wrong! Check your server and database connections");
   }
@@ -45,3 +47,18 @@ function generateTable(data) {
     ],
   });
 } //End of table Generation
+
+function updateReimbursementStatus() {
+  $.ajax({
+    url: url + "/ers_reimbursement/update",
+    type: "PUT",
+    data: JSON.stringify({
+      reimb_id: $("input[name='input']").val(),
+      reimb_status_id_fk: $("select[name='decision']").val(),
+    }),
+
+    success: function (result) {
+      location.reload();
+    },
+  });
+}

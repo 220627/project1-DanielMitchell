@@ -1,10 +1,18 @@
 body {
-  background: linear-gradient(
-    56deg,
-    rgba(32, 3, 69, 1) 0%,
-    rgba(47, 79, 79, 1) 35%,
-    rgba(47, 79, 79, 1) 65%,
-    rgba(14, 30, 37, 1) 100%
+  background-image: linear-gradient(
+    to right top,
+    #a81d36,
+    #a72859,
+    #9d3c78,
+    #8a4f8f,
+    #725f9e,
+    #6570ac,
+    #5980b5,
+    #548eb9,
+    #5ba4c5,
+    #6bbacf,
+    #82cfd7,
+    #9ee3df
   );
 }
 html {
@@ -131,8 +139,26 @@ html {
     2px 2px 0px 0px rgba(0, 0, 0, 0.85), 1px 1px 0px 0px rgba(0, 0, 0, 0.85);
   margin: 5px 0 10px 0;
 }
+#decisionDropdown {
+  padding: 5px 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 15px -5px rgba(255, 255, 255, 0.3),
+    2px 2px 0px 0px rgba(0, 0, 0, 0.85), 1px 1px 0px 0px rgba(0, 0, 0, 0.85);
+  margin: 25px 10px 0 25px;
+}
 
+/*    button  styles   */
 #submitBtn {
   margin-left: 25px;
   padding: 6px 40px;
+}
+#decisionBtn {
+  margin: 15px;
+  padding: 6px 40px;
+}
+
+/*   hide */
+.hide {
+  display: none;
 }

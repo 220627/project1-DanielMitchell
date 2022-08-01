@@ -20,14 +20,33 @@
         <h2>Welcome to the Employee Reimbursement Management System</h2>
         <br>
         <h3>Manager Page</h3>
+        <a href="/HTML/index.html">Home</a>
     </div>
 
     <div id="reimbTableDiv" class="table-row">
+
         <h3 id="formHead">Employee Reimbursements</h3>
+
         <table id="reimbTable" class="table table-bordered" style="width: 100%;">
         </table>
-        <h4></h4>
         <button id="getReimbursementButton" class="btn">Show Reimbursements</button>
+
+        <form class="hide" id="decisionDiv">
+
+            <label for="input">Enter Reimb. ID</label>
+            <input class="inputBox" name="input" type="text">
+
+            <select name="decision" id="decisionDropdown">
+                <option value="2">1. Approve</option>
+                <option value="3">2. Deny</option>
+            </select>
+
+            <a onclick="updateReimbursementStatus()" id="decisionBtn" class="btn">
+
+                Submit Decision
+            </a>
+
+        </form>
     </div>
 
     <script src="../JS/manager.js"></script>

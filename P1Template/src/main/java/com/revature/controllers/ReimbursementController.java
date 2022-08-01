@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import com.google.gson.Gson;
 import com.revature.daos.ReimbursementDAO;
 import com.revature.models.Reimbursement;
+import com.revature.models.ReimbursementStatus;
 
 import io.javalin.http.Handler;
 
@@ -39,9 +40,7 @@ public class ReimbursementController {
 			
 			
 			String body = ctx.body();
-			
 			Gson gson = new Gson();
-		
 			Reimbursement newReimb = gson.fromJson(body, Reimbursement.class);
 
 			if(rDAO.submitReimb(newReimb)) {
@@ -58,24 +57,14 @@ public class ReimbursementController {
 
 
 	public Handler reimbDecisionHandler = (ctx) -> {
-		if(AuthController.ses != null) {
-			
-			String update = ctx.pathParam("");
-			
-			String decision = ctx.body(); 
-			if(rDAO.updateReimbStatus(update, decision)) {
-				ctx.status(202);
-			} else {
-				ctx.status(406);
-			}
-			
-			
-			
-				
-			log.info("Reimbursement Decision Submitted");
-		} else { 
-			ctx.result("PLEASE LOG IN");
-			ctx.status(401); 
-		}
-	};
+
+        Gson gson = new Gson();
+        Reimbursement reimb = gson.fromJson(ctx.body(), Reimbursement.class); 
+
+        if (rDAO.updateReimbStatus(reimb)) {
+            ctx.status(202); 
+        } else {
+            ctx.status(406); 
+        }
+    };
 }

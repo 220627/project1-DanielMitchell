@@ -103,6 +103,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 		
 	} //end of getReimbStatus()
 	
+			
 	@Override
 	public ReimbursementType getReimbType(int id) {
 		
@@ -160,25 +161,32 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 		 return false;
 	}//end of submitReimb
 	
-
 	@Override
-	public void updateReimbStatus(Reimbursement newReimbStatus) {
-	
-		try(Connection conn = ConnectionUtil.getConnection()){
+	public boolean updateReimbStatus(Reimbursement reimb) {
 
-			
-			String sql = "update ers_reimbursement set reimb_resolver = 3 where reimb_id = ?;"
-					+ "UPDATE ers_reimbursement SET reimb_status_id_fk  = '?';";
-			
-			PreparedStatement ps = conn.prepareStatement(sql);
-			
-			ps.setInt(1, newReimbStatus.getReimb_id());
-			ps.setInt(2, newReimbStatus.getReimb_status_id_fk());
-			ps.executeUpdate();
-			
-			} catch (SQLException e) {
-				System.out.println("REIUMBURSEMENT SUBMISSION FAILED");
-				e.printStackTrace();
-			}
-	}
+        try(Connection conn = ConnectionUtil.getConnection()){
+
+            String sql = "UPDATE \"ERS\".ers_reimbursement SET reimb_status_id_fk = ? where reimb_id = ?;";
+           
+            System.out.println(reimb.getReimb_status_id_fk());
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ps.setInt(1, reimb.getReimb_status_id_fk());
+            ps.setInt(2, reimb.getReimb_id());
+           
+
+            ps.executeUpdate();
+
+            System.out.println("Approve/Deny worked");
+
+            return true;
+        } catch (SQLException e) {
+            System.out.println("failed to update");
+            e.printStackTrace();
+        }
+
+        return false; 
+    }
+
+	
 }
