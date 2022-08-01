@@ -55,7 +55,6 @@ function generateTable(data) {
       { data: "Submitted", title: "Date/Time Submitted" },
       { data: "Description", title: "Description" },
       { data: "Author", title: "Author ID" },
-      { data: "Resolver", title: "Resolver ID" },
       { data: "Status", title: "Status" },
       { data: "Type", title: "Type" },
     ],

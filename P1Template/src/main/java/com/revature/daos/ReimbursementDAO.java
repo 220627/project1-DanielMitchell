@@ -129,6 +129,8 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace(); 
+			System.out.println("GETTING REIMBURSEMENT TYPE FAILED");
+			log.warn("User Failed Getting Reimbursement Type");
 		}
 		
 		return null;
@@ -155,7 +157,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 			return true; //if the update is successful, true will get returned
 				
 			} catch (SQLException e) { //if anything goes wrong, this SQLException will get thrown
-				System.out.println("REIUMBURSEMENT SUBMISSION FAILED");
+				log.warn("REIUMBURSEMENT SUBMISSION FAILED");
 				e.printStackTrace();
 			}
 		 return false;
@@ -171,17 +173,18 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
             System.out.println(reimb.getReimb_status_id_fk());
             PreparedStatement ps = conn.prepareStatement(sql);
 
+            
             ps.setInt(1, reimb.getReimb_status_id_fk());
             ps.setInt(2, reimb.getReimb_id());
            
 
             ps.executeUpdate();
 
-            System.out.println("Approve/Deny worked");
+            log.info("REIMBURSEMENT STATUS UPDATED");
 
             return true;
         } catch (SQLException e) {
-            System.out.println("failed to update");
+            log.warn("failed to update");
             e.printStackTrace();
         }
 

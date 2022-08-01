@@ -1,22 +1,22 @@
+html,
 body {
-  background-image: linear-gradient(
-    to right top,
-    #a81d36,
-    #a72859,
-    #9d3c78,
-    #8a4f8f,
-    #725f9e,
-    #6570ac,
-    #5980b5,
-    #548eb9,
-    #5ba4c5,
-    #6bbacf,
-    #82cfd7,
-    #9ee3df
-  );
-}
-html {
+  width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 }
 .btn {
   background-color: cadetblue;
@@ -40,7 +40,7 @@ html {
 #mainHead {
   display: grid;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 2px 2px 12px -3px rgba(0, 0, 0, 0.64);
   margin: 15px;
   padding: 20px 10px;
@@ -55,8 +55,8 @@ html {
   border: 1px solid rgba(0, 0, 0, 0.6);
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.35) 100%
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.5) 100%
   );
   box-shadow: 2px 2px 12px -3px rgba(0, 0, 0, 0.64);
   padding: 20px 10px;
@@ -74,7 +74,7 @@ html {
   display: grid;
   justify-items: center;
   margin: 2%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 10px;
   border-radius: 10px;
 }
@@ -101,7 +101,7 @@ html {
   display: grid;
   justify-items: center;
   margin: 2%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 10px;
   border-radius: 10px;
 }
