@@ -4,7 +4,7 @@ public class Reimbursement {
 	
 	private int reimb_id;
 	private int reimb_amount;
-	private String reimb_submitted; // <--------------- CHECK TIMESTAMP NOTES
+	private String reimb_submitted; 
 	private String reimb_description;
 	private int reimb_author;
 	private int reimb_resolver;
@@ -12,11 +12,13 @@ public class Reimbursement {
 	private ReimbursementType reimbursement_type;
 	
 	
+	private int reimb_status_id_fk;
+	private int reimb_type_id_fk;
+	
 	public Reimbursement() {
 		super();
 	}
 	
-	private int reimb_type_id_fk;
 	public Reimbursement(int reimb_id, int reimb_amount, String reimb_submitted, String reimb_description,
 			int reimb_author, int reimb_resolver, ReimbursementStatus reimbuirsement_status,
 			ReimbursementType reimbursement_type) {
@@ -30,13 +32,7 @@ public class Reimbursement {
 		this.reimbursement_status = reimbuirsement_status;
 		this.reimbursement_type = reimbursement_type;
 	}
-	@Override
-	public String toString() {
-		return "Reimbursement [reimb_id=" + reimb_id + ", reimb_amount=" + reimb_amount + ", reimb_submitted="
-				+ reimb_submitted + ", reimb_description=" + reimb_description + ", reimb_author=" + reimb_author
-				+ ", reimb_resolver=" + reimb_resolver + ", reimbuirsement_status=" + reimbursement_status
-				+ ", reimbursement_type=" + reimbursement_type + "]";
-	}
+	
 	public int getReimb_id() {
 		return reimb_id;
 	}
@@ -90,5 +86,11 @@ public class Reimbursement {
 	}
 	public void setReimb_type_id_fk(int reimb_type_id_fk) {
 		this.reimb_type_id_fk = reimb_type_id_fk;
+	}
+	public int getReimb_status_id_fk() {
+		return reimb_status_id_fk;
+	}
+	public void setReimb_status_id_fk(int reimb_status_id_fk) {
+		this.reimb_status_id_fk = reimb_status_id_fk;
 	}
 }//End of Reimbursement

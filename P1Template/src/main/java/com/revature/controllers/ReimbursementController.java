@@ -2,6 +2,9 @@ package com.revature.controllers;
 
 import java.util.ArrayList;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.google.gson.Gson;
 import com.revature.daos.ReimbursementDAO;
 import com.revature.models.Reimbursement;
@@ -10,6 +13,7 @@ import io.javalin.http.Handler;
 
 public class ReimbursementController {
 	
+	public static Logger log = LogManager.getLogger();
 	ReimbursementDAO rDAO = new ReimbursementDAO();
 	
 	public Handler getReimbursementsHandler = (ctx) -> {
@@ -39,15 +43,12 @@ public class ReimbursementController {
 			Gson gson = new Gson();
 		
 			Reimbursement newReimb = gson.fromJson(body, Reimbursement.class);
-			
-			
+
 			if(rDAO.submitReimb(newReimb)) {
-				//return a successful status code
-				ctx.status(202); //202 stands for "accepted"
+				ctx.status(202);
 			} else {
-				ctx.status(406); //406 stands for "Not Acceptable", AKA whatever the user sent couldn't be added to the DB
+				ctx.status(406);
 			}
-			
 			
 		} else { 
 			ctx.result("PLEASE LOG IN");
@@ -55,7 +56,26 @@ public class ReimbursementController {
 		}
 	};
 
-	public Handler reimbDecisionHandler;
-	
 
+	public Handler reimbDecisionHandler = (ctx) -> {
+		if(AuthController.ses != null) {
+			
+			String update = ctx.pathParam("");
+			
+			String decision = ctx.body(); 
+			if(rDAO.updateReimbStatus(update, decision)) {
+				ctx.status(202);
+			} else {
+				ctx.status(406);
+			}
+			
+			
+			
+				
+			log.info("Reimbursement Decision Submitted");
+		} else { 
+			ctx.result("PLEASE LOG IN");
+			ctx.status(401); 
+		}
+	};
 }

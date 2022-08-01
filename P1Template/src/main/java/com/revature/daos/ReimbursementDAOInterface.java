@@ -15,4 +15,6 @@ public interface ReimbursementDAOInterface {
 
 	boolean submitReimb(Reimbursement newReimb);
 
+	void updateReimbStatus(Reimbursement newReimbStatus);
+
 }

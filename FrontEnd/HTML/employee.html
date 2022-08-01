@@ -24,35 +24,36 @@
 
     </div>
     <div id="reimbTableDiv" class="table-row">
+        <h3 id="formHead">Employee Reimbursements</h3>
         <table id="reimbTable" class="table table-bordered" style="width: 100%;">
         </table>
-        <h4></h4>
+
         <button id="getReimbursementButton" class="btn">Show My Reimbursements</button>
     </div>
 
     <div class="submitForm">
         <div>
-            <form action="submitReimbursement()" id="submitForm">
+            <form id="submitForm">
                 <h3 id="formHead">Submit Reimbursement Request</h3>
                 <div>
                     <label for="amount">Amount</label>
                     <input type="text" name="amount" placeholder="Amount">
 
-                    <label for="description">Description</label>
+                    <label for="description" id="descriptLabel">Description</label>
                     <input type="text" name="description" placeholder="Description(250)" maxlength="250">
                 </div>
                 <div id="bottomText">
                     <label for="author">Author ID#</label>
                     <input type="text" name="author" placeholder="Author ID">
 
-                    <label for="type">Type</label>
+                    <label for="type" id="typeLabel">Type</label>
                     <select name="type" id="typeDropdown">
-                        <option value="1">Lodging</option>
-                        <option value="2">Travel</option>
-                        <option value="3">Food</option>
-                        <option value="4">Other</option>
+                        <option value="1">1. Lodging</option>
+                        <option value="2">2. Travel</option>
+                        <option value="3">3. Food</option>
+                        <option value="4">4. Other</option>
                     </select>
-                    <button type="submit" id="submitBtn" class="btn">Submit</button>
+                    <a id="submitBtn" class="btn" onclick="submitReimbursement()">Submit<a />
                 </div>
             </form>
         </div>

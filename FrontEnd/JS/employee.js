@@ -1,6 +1,5 @@
 const url = "http://localhost:3000";
 document.getElementById("getReimbursementButton").onclick = getReimbursements;
-document.getElementById("submitBtn").onsubmit = submitReimbursement;
 async function getReimbursements() {
   let response = await fetch(url + "/ers_reimbursement");
 
@@ -31,14 +30,28 @@ async function getReimbursements() {
   }
 }
 
-function submitReimbursement() {}
+function submitReimbursement() {
+  $.ajax({
+    url: url + "/ers_reimbursement",
+    type: "PUT",
+    data: JSON.stringify({
+      reimb_amount: $("input[name='amount']").val(),
+      reimb_description: $("input[name='description']").val(),
+      reimb_author: $("input[name='author']").val(),
+      reimb_type_id_fk: $("select[name='type']").val(),
+    }),
+    success: function (result) {
+      location.reload();
+    },
+  });
+}
 
 function generateTable(data) {
   $("#reimbTable").DataTable({
     data: data,
     columns: [
-      { data: "ID", title: "ID" },
-      { data: "Amount", title: "Amount" },
+      { data: "ID", title: "Reimb. ID" },
+      { data: "Amount", title: "Amount (USD)" },
       { data: "Submitted", title: "Date/Time Submitted" },
       { data: "Description", title: "Description" },
       { data: "Author", title: "Author ID" },
@@ -47,4 +60,4 @@ function generateTable(data) {
       { data: "Type", title: "Type" },
     ],
   });
-}
+} //End of table generation

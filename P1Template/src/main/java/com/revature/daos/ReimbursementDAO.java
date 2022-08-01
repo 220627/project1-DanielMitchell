@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpSession;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,12 +20,12 @@ import com.revature.utils.ConnectionUtil;
 public class ReimbursementDAO implements ReimbursementDAOInterface {
 	
 	public static Logger log = LogManager.getLogger(); //<------ use
-
+	
 	@Override
 	public ArrayList<Reimbursement> getReimbursements() {
 		
 		try(Connection conn = ConnectionUtil.getConnection()){
-			
+		
 			String sql = "SELECT * FROM \"ERS\".ers_reimbursement;";
 
 			Statement s = conn.createStatement(); 
@@ -92,7 +94,8 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 				return rStatus;	
 			}
 		} catch (SQLException e) {
-			System.out.println("GETTING REIMBURSEMENT STATUS FAILED"); 
+			System.out.println("GETTING REIMBURSEMENT STATUS FAILED");
+			log.warn("User Failed Getting Reimbursement Status");
 			e.printStackTrace(); 
 		}
 		
@@ -118,11 +121,12 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 				ReimbursementType rType = new ReimbursementType(
 						rs.getInt("reimb_type_id"),
 						rs.getString("reimb_type")
-					); 
-				return rType;	
+					);
+				 
+				return rType;
+				
 			}
 		} catch (SQLException e) {
-			System.out.println("GETTING REIMBURSEMENT TYPE FAILED"); 
 			e.printStackTrace(); 
 		}
 		
@@ -134,7 +138,8 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 			
 			try(Connection conn = ConnectionUtil.getConnection()){
 				
-			String sql = "INSERT INTO \"ERS\".ers_reimbursement (reimb_amount, reimb_submitted, reimb_description, reimb_author, reimb_resolver, reimb_status_id_fk, reimb_type_id_fk) VALUES(?, now(), ?, ?, NULL, DEFAULT, ?);";
+			String sql = "INSERT INTO \"ERS\".ers_reimbursement (reimb_amount, reimb_submitted, reimb_description, reimb_author,"
+					+ " reimb_resolver, reimb_status_id_fk, reimb_type_id_fk) VALUES(?, now(), ?, ?, NULL, DEFAULT, ?);";
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
 				
@@ -143,15 +148,37 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 			ps.setInt(3, newReimb.getReimb_author());
 			ps.setInt(4, newReimb.getReimb_type_id_fk());
 			
-			System.out.println("REIMBURSEMENT SUBMITTED");
 			ps.executeUpdate();
-			
+			System.out.println("REIMBURSEMENT SUBMITTED");
+			log.info("Employee Has Submitted A Reimbursement Request");
 			return true; //if the update is successful, true will get returned
 				
 			} catch (SQLException e) { //if anything goes wrong, this SQLException will get thrown
-				System.out.println("REIUMBURSEMENT SUBMISSIONFAILED"); //tell the console we failed
-				e.printStackTrace(); //print out the error log, which we'll need for debugging
+				System.out.println("REIUMBURSEMENT SUBMISSION FAILED");
+				e.printStackTrace();
 			}
 		 return false;
+	}//end of submitReimb
+	
+
+	@Override
+	public void updateReimbStatus(Reimbursement newReimbStatus) {
+	
+		try(Connection conn = ConnectionUtil.getConnection()){
+
+			
+			String sql = "update ers_reimbursement set reimb_resolver = 3 where reimb_id = ?;"
+					+ "UPDATE ers_reimbursement SET reimb_status_id_fk  = '?';";
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ps.setInt(1, newReimbStatus.getReimb_id());
+			ps.setInt(2, newReimbStatus.getReimb_status_id_fk());
+			ps.executeUpdate();
+			
+			} catch (SQLException e) {
+				System.out.println("REIUMBURSEMENT SUBMISSION FAILED");
+				e.printStackTrace();
+			}
 	}
 }

@@ -35,7 +35,7 @@ function generateTable(data) {
     data: data,
     columns: [
       { data: "ID", title: "Reimb. ID" },
-      { data: "Amount", title: "Amount" },
+      { data: "Amount", title: "Amount (USD)" },
       { data: "Submitted", title: "Date/Time Submitted" },
       { data: "Description", title: "Description" },
       { data: "Author", title: "Author ID" },
@@ -44,4 +44,4 @@ function generateTable(data) {
       { data: "Type", title: "Type" },
     ],
   });
-}
+} //End of table Generation

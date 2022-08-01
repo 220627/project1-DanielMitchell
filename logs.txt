@@ -191,3 +191,172 @@
 2022-07-28 03:56:33 INFO  AuthController:33 - User Logged In!
 2022-07-28 03:56:40 INFO  ReimbursementDAO:61 - User Got All Reimbursements
 2022-07-28 03:59:53 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 13:27:01 INFO  AuthController:33 - User Logged In!
+2022-07-28 13:27:08 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 13:32:44 INFO  AuthController:33 - User Logged In!
+2022-07-28 13:32:47 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 13:32:55 INFO  AuthController:33 - User Logged In!
+2022-07-28 13:38:47 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:20:15 INFO  AuthController:33 - User Logged In!
+2022-07-28 14:20:23 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:22:51 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:36:35 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:36:56 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:37:13 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:40:15 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:40:19 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:40:49 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:41:33 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:41:59 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:54:36 INFO  AuthController:33 - User Logged In!
+2022-07-28 14:54:39 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 14:56:39 INFO  AuthController:33 - User Logged In!
+2022-07-28 14:56:42 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:02:21 INFO  AuthController:33 - User Logged In!
+2022-07-28 15:02:31 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:04:30 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:15:34 INFO  AuthController:33 - User Logged In!
+2022-07-28 15:15:38 INFO  AuthController:33 - User Logged In!
+2022-07-28 15:15:40 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:16:35 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:44:13 INFO  AuthController:33 - User Logged In!
+2022-07-28 15:44:15 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:46:11 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:46:59 INFO  AuthController:33 - User Logged In!
+2022-07-28 15:47:00 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 15:47:42 INFO  AuthController:33 - User Logged In!
+2022-07-28 15:47:55 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 17:12:31 INFO  AuthController:33 - User Logged In!
+2022-07-28 18:01:57 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 19:12:58 INFO  AuthController:33 - User Logged In!
+2022-07-28 19:13:26 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 19:35:51 INFO  AuthController:33 - User Logged In!
+2022-07-28 19:35:54 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 19:36:42 INFO  AuthController:33 - User Logged In!
+2022-07-28 19:36:44 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 19:37:39 INFO  AuthController:33 - User Logged In!
+2022-07-28 19:37:40 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:22:52 INFO  AuthController:33 - User Logged In!
+2022-07-28 22:25:51 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:25:51 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:25:51 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:25:51 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:25:51 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:25:51 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:25:51 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:26:05 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:26:05 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:26:05 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:26:05 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:26:05 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:26:05 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:26:05 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:27:14 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:27:14 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:27:14 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:27:14 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:27:14 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:27:14 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:27:14 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:28:56 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:28:56 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:28:56 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:28:57 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:28:57 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:28:57 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:28:57 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:37:18 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:37:18 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:37:18 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:37:18 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:37:18 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:37:18 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:37:18 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:38:02 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:02 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:02 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:02 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:02 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:02 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:02 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:38:39 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:39 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:39 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:39 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:39 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:39 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:38:39 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:39:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:39:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:39:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:39:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:39:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:39:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:39:24 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:44:45 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:44:45 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:44:45 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:44:45 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:44:45 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:44:45 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:44:45 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:45:21 INFO  ReimbursementDAO:151 - Employee Has Submitted A Reimbursement Request
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:24 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:45:28 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:123 - Reimbursement Type Set
+2022-07-28 22:47:28 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:49:39 INFO  AuthController:33 - User Logged In!
+2022-07-28 22:49:58 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:56:03 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 22:56:08 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:07:32 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:07:34 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:08:48 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:18:38 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:18:52 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:20:24 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:24:21 INFO  ReimbursementDAO:151 - Employee Has Submitted A Reimbursement Request
+2022-07-28 23:24:29 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:25:30 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:25:35 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:30:35 INFO  ReimbursementDAO:151 - Employee Has Submitted A Reimbursement Request
+2022-07-28 23:30:39 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:30:57 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:33:01 INFO  ReimbursementDAO:151 - Employee Has Submitted A Reimbursement Request
+2022-07-28 23:33:24 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:33:34 INFO  ReimbursementDAO:151 - Employee Has Submitted A Reimbursement Request
+2022-07-28 23:33:41 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:33:55 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:34:27 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:36:28 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:37:19 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:37:25 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:37:54 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:38:34 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:55:27 INFO  ReimbursementDAO:61 - User Got All Reimbursements
+2022-07-28 23:55:59 INFO  AuthController:33 - User Logged In!
+2022-07-28 23:56:01 INFO  ReimbursementDAO:65 - User Got All Reimbursements
+2022-07-29 00:01:18 INFO  ReimbursementDAO:65 - User Got All Reimbursements
+2022-07-29 00:12:26 INFO  AuthController:33 - User Logged In!
+2022-07-29 00:13:51 INFO  AuthController:33 - User Logged In!
+2022-07-29 00:14:42 INFO  ReimbursementDAO:65 - User Got All Reimbursements

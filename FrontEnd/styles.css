@@ -98,7 +98,6 @@ html {
   border-radius: 10px;
 }
 #submitForm input + label {
-  padding-left: 10px;
   margin: 8px;
 }
 #submitForm input {
@@ -118,8 +117,12 @@ html {
   border-bottom: 1px solid darkslategray;
 }
 #submitForm input[name="description"] {
-  min-width: 300px;
+  min-width: 350px;
 }
+#submitForm input[name="author"] {
+  margin-right: 43px;
+}
+
 #typeDropdown {
   padding: 4px 35px;
   border-radius: 5px;
@@ -128,7 +131,8 @@ html {
     2px 2px 0px 0px rgba(0, 0, 0, 0.85), 1px 1px 0px 0px rgba(0, 0, 0, 0.85);
   margin: 5px 0 10px 0;
 }
+
 #submitBtn {
   margin-left: 25px;
-  padding: 6px 43px;
+  padding: 6px 40px;
 }
