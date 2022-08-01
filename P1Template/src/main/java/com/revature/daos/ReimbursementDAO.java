@@ -122,9 +122,9 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
 				ReimbursementType rType = new ReimbursementType(
 						rs.getInt("reimb_type_id"),
 						rs.getString("reimb_type")
-					);
-				 
+					); 
 				return rType;
+				
 				
 			}
 		} catch (SQLException e) {
@@ -169,8 +169,7 @@ public class ReimbursementDAO implements ReimbursementDAOInterface {
         try(Connection conn = ConnectionUtil.getConnection()){
 
             String sql = "UPDATE \"ERS\".ers_reimbursement SET reimb_status_id_fk = ? where reimb_id = ?;";
-           
-            System.out.println(reimb.getReimb_status_id_fk());
+        
             PreparedStatement ps = conn.prepareStatement(sql);
 
             
